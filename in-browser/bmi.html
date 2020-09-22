@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BMI</title>
+	<script type="text/javascript" src="bmi.js"></script>
+	<script type="text/javascript" src="min.css"></script>
+</head>
+<body>
+	<div id="app">
+		<h1>BMI CALCULATOR</h1>
+		<form>
+			<h3>Your Weight</h3>
+			<input id=weight type=number value=150 oninput=slider.value=value;bmi() v-model="userweight">
+            <input id=slider type=range min=0 max=650 value=185 oninput=weight.value=value;bmi()>
+            <h3>height</h3>
+            <span>Feet</span>
+            <input id=feet type=number value=6 onchange=bmi() v-model="feet">
+            <span>Inches</span>
+            <input id=inches type=number value=0 onchange=bmi() v-model="feet">
+<output></output>
+
+ </form>
+	</div>
+
+	<script type="text/javascript">
+	
+	var app = new Vue({
+  el: '#app',
+  data: {
+  	message: 'BMI CALCULATOR',
+    messages: 'Your Weight',
+    userweight:'',
+    height: 'Height',
+    feet: 'Feet',
+    inches: 'Inches'
+
+
+
+
+  }
+})
+</script>
+</body>
+</html>
